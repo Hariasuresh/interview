@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #ff6384;
+}
+
+.box {
+    border: 2px solid #ff6384;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.box .expanded {
+    border-color: #ff6384;
+    background-color: #ffebf0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+.discount {
+    background-color: #ff6384;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.badge {
+    background-color: #f59e0b;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+del {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.options {
+    display: none;
+    /* Initially hidden */
+    margin-top: 15px;
+}
+
+.option-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+label[for] {
+    margin-right: 10px;
+}
+
+/* Display expanded options */
+.box.expanded .options {
+    display: block;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer .free-delivery {
+    font-weight: bold;
+    color: green;
+}
+
+.footer .total {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.footer button.add-to-cart {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer button.add-to-cart:hover {
+    background-color: #e65b50;
+}
+
+/* Summary Container */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    /* Push content to edges */
+    align-items: center;
+    /* Vertically center items */
+    padding: 10px 15px;
+    border-top: 2px solid #eee;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Free Delivery Styling */
+.free-delivery {
+    font-weight: 500;
+    color: #28a745;
+    /* Green color for emphasis */
+}
+
+/* Total Price Styling */
+.total strong {
+    color: #ff6384;
+    /* Highlight total in red/pink */
+    font-size: 18px;
+}
+
+.button-wrapper {
+    position: relative;
+    /* Container for positioning */
+    width: 100%;
+    /* Full width */
+    display: inline-block;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    width: 100%;
+    /* Full width */
+    padding: 12px 0;
+    /* Vertical padding for height */
+    font-size: 16px;
+    /* Readable text size */
+    font-weight: bold;
+    color: #fff;
+    /* White text */
+    background-color: #007bff;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    /* Center the text */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.add-to-cart:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.powered-by {
+    position: absolute;
+    bottom: -15px;
+    /* Distance below the button */
+    right: 10px;
+    /* Distance from the right corner */
+    font-size: 10px;
+    /* Smaller text */
+    color: #666;
+    /* Light gray color */
+    font-style: italic;
+}
