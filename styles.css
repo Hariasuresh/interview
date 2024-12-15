@@ -12,6 +12,10 @@ h1 {
     color: #ff6384;
 }
 
+.bogo-section {
+    max-width: 400px;
+}
+
 .box {
     border: 2px solid #ff6384;
     border-radius: 8px;
